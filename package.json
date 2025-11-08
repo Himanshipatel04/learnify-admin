@@ -1,0 +1,23 @@
+{
+  "name": "admin",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/express": "^5.0.5",
+    "@types/node": "^24.10.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "expess": "^0.0.1-security",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.19.3"
+  }
+}
