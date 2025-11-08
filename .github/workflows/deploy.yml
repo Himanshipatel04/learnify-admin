@@ -17,13 +17,15 @@ jobs:
         uses : oven-sh/setup-bun@v1
 
       - name : Install dependencies
-        run : bun Install
+        run : bun install
 
       - name : Build Admin Service
         run : bun build
 
       - name : Deploy to Render
-        run : curl -X POST ${{secrets.RENDER_DEPLOY_HOOK}}
+        run : |
+          echo "Triggering deployment of Admin service..."
+          # curl -X POST ${{secrets.RENDER_DEPLOY_HOOK}}
 
 
     

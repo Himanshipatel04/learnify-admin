@@ -9,9 +9,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req: Request, res: Response) => {
-  return res.status(200).json({ message: "Admin api is listening." });
+  return res.status(200).json({ message: "Admin api is listening!" });
 });
 
 app.listen(process.env.PORT, () => {
-  console.log(`Admin app is running at ${process.env.PORT}`);
+  console.log(`Admin app is running on port ${process.env.PORT}`);
 });
