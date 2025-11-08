@@ -20,7 +20,7 @@ jobs:
         run : bun install
 
       - name : Build Admin Service
-        run : bun build
+        run : bun build src/index.ts --outdir dist
 
       - name : Deploy to Render
         run : |
